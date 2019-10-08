@@ -28,82 +28,86 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.userControl31 = new DoAn1.UserControl3();
+            this.userControl21 = new DoAn1.UserControl2();
+            this.userControl11 = new DoAn1.UserControl1();
             this.SuspendLayout();
             // 
-            // textBox1
+            // btn1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 343);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btn1.Location = new System.Drawing.Point(39, 391);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(82, 35);
+            this.btn1.TabIndex = 1;
+            this.btn1.Text = "Open";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // button1
+            // richTextBox1
             // 
-            this.button1.Location = new System.Drawing.Point(72, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(272, 360);
+            this.richTextBox1.TabIndex = 5;
+            this.richTextBox1.Text = "";
             // 
-            // chart1
+            // btn2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(267, 1);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(538, 445);
-            this.chart1.TabIndex = 2;
-            this.chart1.Text = "chart1";
+            this.btn2.Location = new System.Drawing.Point(154, 391);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(82, 35);
+            this.btn2.TabIndex = 6;
+            this.btn2.Text = "Draw";
+            this.btn2.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // userControl31
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(829, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(201, 381);
-            this.listBox1.TabIndex = 3;
+            this.userControl31.Location = new System.Drawing.Point(464, 154);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(85, 47);
+            this.userControl31.TabIndex = 9;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(463, 83);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(86, 47);
+            this.userControl21.TabIndex = 8;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(463, 12);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(86, 46);
+            this.userControl11.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 450);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btn1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        public System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.Button btn2;
+        private UserControl1 userControl11;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
     }
 }
 

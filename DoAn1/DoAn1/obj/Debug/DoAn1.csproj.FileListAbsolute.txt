@@ -1,0 +1,13 @@
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.Form1.resources
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.Properties.Resources.resources
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csproj.GenerateResource.cache
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csproj.CoreCompileInputs.cache
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.exe.config
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.exe
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.pdb
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.exe
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.pdb
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl1.resources
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl2.resources
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl3.resources
+E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csprojAssemblyReference.cache
