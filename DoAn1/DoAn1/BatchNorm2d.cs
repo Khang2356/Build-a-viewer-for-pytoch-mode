@@ -19,5 +19,13 @@ namespace DoAn1
         public float Momentum { get => momentum; set => momentum = value; }
         public bool Affine { get => affine; set => affine = value; }
         public bool Track_running_stats { get => track_running_stats; set => track_running_stats = value; }
+
+        public BatchNorm2d(string name,List<Layer> inputs,List<Layer> outputs,int num_features,string eps,float momentum,bool affine,bool track_running_stats):base(name,inputs,outputs){
+            this.num_features = num_features;
+            this.eps = eps;
+            this.momentum = momentum;
+            this.affine = affine;
+            this.track_running_stats = track_running_stats;
+        }
     }
 }

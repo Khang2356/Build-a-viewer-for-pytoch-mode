@@ -15,5 +15,11 @@ namespace DoAn1
         public int Input_features { get => input_features; set => input_features = value; }
         public int Output_features { get => output_features; set => output_features = value; }
         public bool Bias { get => bias; set => bias = value; }
+
+        public Linear(string name,List<Layer> inputs,List<Layer> outputs,int input_features,int output_features,bool bias) : base(name, inputs, outputs) {
+            this.input_features = input_features;
+            this.output_features = output_features;
+            this.bias = bias;
+        }
     }
 }

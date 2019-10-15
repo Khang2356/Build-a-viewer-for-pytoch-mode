@@ -13,5 +13,10 @@ namespace DoAn1
 
         public float P { get => p; set => p = value; }
         public bool Inplace { get => inplace; set => inplace = value; }
+
+        public Dropout(string name,List<Layer> inputs,List<Layer> outputs,float p,bool inplace) : base(name, inputs, outputs) {
+            this.p = p;
+            this.inplace = inplace;
+        }
     }
 }

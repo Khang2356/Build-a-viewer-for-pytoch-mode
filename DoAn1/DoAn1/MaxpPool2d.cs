@@ -21,5 +21,14 @@ namespace DoAn1
         public int Dilation { get => dilation; set => dilation = value; }
         public bool Return_indices { get => return_indices; set => return_indices = value; }
         public bool Ceil_mode { get => ceil_mode; set => ceil_mode = value; }
+
+        public MaxpPool2d(string name,List<Layer> inputs,List<Layer> outputs,int kernel_size,int stride,int padding,int dilation,bool return_indices,bool ceil_mode):base(name, inputs, outputs) {
+            this.kernel_size = kernel_size;
+            this.stride = stride;
+            this.padding = padding;
+            this.dilation = dilation;
+            this.return_indices = return_indices;
+            this.ceil_mode = ceil_mode;
+        }
     }
 }
