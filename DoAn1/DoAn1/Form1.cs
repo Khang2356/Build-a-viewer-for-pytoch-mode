@@ -20,9 +20,14 @@ namespace DoAn1
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
             grs = panel1.CreateGraphics();
+=======
+            UserControl1 u2 = new UserControl1();
+            
+>>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
         }
-
+       
         public void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -49,7 +54,33 @@ namespace DoAn1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+           
+        }
 
+        private void userControl11_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl21_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl31_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+
+
+            Pen p = new Pen(Color.Red, 1);
+            Graphics g = this.CreateGraphics();
+            g.DrawLine(p, new Point(500, 200), new Point(500, 20));
+            p.Dispose();
+            g.Dispose();
         }
 
         public void btn2_Click(object sender, EventArgs e)

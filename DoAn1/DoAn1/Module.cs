@@ -11,13 +11,23 @@ namespace DoAn1
         //name
         //inputs
         //outputs
-        private string name;
+        public string name;
         List<Layer> inputs = new List<Layer>();
-
         List<Layer> outputs = new List<Layer>();
     }
     public  class Module
     {
+        private string name;
+        private List<Layer> inputs;
+        private List<Layer> outputs;
+
+        public Module(string name, List<Layer> inputs, List<Layer> outputs)
+        {
+            this.name = name;
+            this.inputs = inputs;
+            this.outputs = outputs;
+        }
+
         //cau truc luu so do Layer
         class Node
         {
@@ -72,5 +82,6 @@ namespace DoAn1
                 next = Softmax;
             }
         }
+        
     }
 }

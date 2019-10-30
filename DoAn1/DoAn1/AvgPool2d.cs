@@ -25,9 +25,21 @@ namespace DoAn1
         public bool Ceil_mode { get => ceil_mode; set => ceil_mode = value; }
         public bool Count_include_pad { get => count_include_pad; set => count_include_pad = value; }
         public int Divisor_override { get => divisor_override; set => divisor_override = value; }
+<<<<<<< HEAD
         public int X { get => x; set => x = value; }
         public int Y { get => y; set => y = value; }
         public int Dai { get => dai; set => dai = value; }
         public int Rong { get => rong; set => rong = value; }
+=======
+
+        public AvgPool2d(string name,List<Layer> inputs,List<Layer> outputs,int kernel_size,int stride,int padding,bool ceil_mode,bool count_include_pad,int divisor_override):base(name,inputs,outputs){
+            this.kernel_size = kernel_size;
+            this.stride = stride;
+            this.padding = padding;
+            this.ceil_mode = ceil_mode;
+            this.count_include_pad = count_include_pad;
+            this.divisor_override = divisor_override;
+        }
+>>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
     }
 }

@@ -31,9 +31,24 @@ namespace DoAn1
         public int Group { get => group; set => group = value; }
         public bool Bias { get => bias; set => bias = value; }
         public string Padding_mode { get => padding_mode; set => padding_mode = value; }
+<<<<<<< HEAD
         public int X { get => x; set => x = value; }
         public int Y { get => y; set => y = value; }
         public int Dai { get => dai; set => dai = value; }
         public int Rong { get => rong; set => rong = value; }
+=======
+
+        public Conv2d(string name,List<Layer> inputs,List<Layer> outputs,int input_channel,int output_channel,int kernel_size,int stride,int padding,int dilation,int group,bool bias,string padding_mode):base(name, inputs, outputs) {
+            this.input_channel = input_channel;
+            this.output_channel = output_channel;
+            this.kernel_size = kernel_size;
+            this.stride = stride;
+            this.padding = padding;
+            this.dilation = dilation;
+            this.group = group;
+            this.bias = bias;
+            this.padding_mode = padding_mode;
+        }
+>>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
     }
 }
