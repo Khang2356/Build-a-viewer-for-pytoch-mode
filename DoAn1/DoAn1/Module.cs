@@ -42,12 +42,34 @@ namespace DoAn1
         class SingleLinkList
         {
             protected Node head; // Vi trí đầu
-            protected Node tail;  // vị trí cuối
+            protected Node next;  // vị trí cuối
 
             // Khởi tạo 1 danh sách LK đơn rỗng
             public SingleLinkList()
             {
-            head = tail = null;
+            head = next = null;
+            }
+            public void AddHead(Layer x)
+            {
+                Node Data = new Node(x, head);
+                head = Data;
+            }
+            public void AddTail(Layer x)
+            {
+                Node Dropout = new Node(x, next);
+                next = Dropout;
+                Node Conv2d = new Node(x, next);
+                next = Conv2d;
+                Node Linear = new Node(x, next);
+                next = Linear;
+                Node BatchNorm2d = new Node(x, next);
+                next = BatchNorm2d;
+                Node MaxPool2d = new Node(x, next);
+                next = MaxPool2d;
+                Node AvgPool2d = new Node(x, next);
+                next = AvgPool2d;
+                Node Softmax = new Node(x, next);
+                next = Softmax;
             }
         }
     }

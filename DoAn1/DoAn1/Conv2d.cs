@@ -17,6 +17,10 @@ namespace DoAn1
         private int group;
         private bool bias = true;
         private string padding_mode;
+        private int x;
+        private int y;
+        private int dai;
+        private int rong;
 
         public int Input_channel { get => input_channel; set => input_channel = value; }
         public int Output_channel { get => output_channel; set => output_channel = value; }
@@ -27,5 +31,9 @@ namespace DoAn1
         public int Group { get => group; set => group = value; }
         public bool Bias { get => bias; set => bias = value; }
         public string Padding_mode { get => padding_mode; set => padding_mode = value; }
+        public int X { get => x; set => x = value; }
+        public int Y { get => y; set => y = value; }
+        public int Dai { get => dai; set => dai = value; }
+        public int Rong { get => rong; set => rong = value; }
     }
 }
