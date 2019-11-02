@@ -20,12 +20,7 @@ namespace DoAn1
         public Form1()
         {
             InitializeComponent();
-<<<<<<< HEAD
             grs = panel1.CreateGraphics();
-=======
-            UserControl1 u2 = new UserControl1();
-            
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
         }
        
         public void textBox1_TextChanged(object sender, EventArgs e)
@@ -73,7 +68,7 @@ namespace DoAn1
         }
 
         private void btn2_Click(object sender, EventArgs e)
-        {
+        {   //Search character in txt file
             using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text File|*.txt", Multiselect = false })
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -81,15 +76,15 @@ namespace DoAn1
                     using (StreamReader rd = new StreamReader(ofd.FileName))
                     {
                         string currentLine;
-                        string searchString = "data";
+                        string searchString = "def forward(self,data)";
                         string searchString1 = "Conv2d";
-                        string searchString2 = "AvgPool2d";
-                        string searchString3 = "BatchNorm2d";
-                        string searchString4 = "Dropout";
-                        string searchString5 = "MaxPool2d";
-                        string searchString6 = "Softmax";
+                        //string searchString2 = "AvgPool2d";
+                        //string searchString3 = "BatchNorm2d";
+                        //string searchString4 = "Dropout";
+                        //string searchString5 = "MaxPool2d";
+                        //string searchString6 = "Softmax";
 
-                        string success = "Yes";
+                        //string success = "Yes";
                         string error = "Nope";
                         bool foundText = false;
 
@@ -100,18 +95,19 @@ namespace DoAn1
                             {
                                 foundText = currentLine.Contains(searchString);
                                 foundText = currentLine.Contains(searchString1);
-                                foundText = currentLine.Contains(searchString2);
+                                /*foundText = currentLine.Contains(searchString2);
                                 foundText = currentLine.Contains(searchString3);
                                 foundText = currentLine.Contains(searchString4);
                                 foundText = currentLine.Contains(searchString5);
-                                foundText = currentLine.Contains(searchString6);
+                                foundText = currentLine.Contains(searchString6);*/
                             }
                         }
                         while (currentLine != null && !foundText);
 
                         if (foundText)
                         {
-                            MessageBox.Show(success);
+                            draw draw = new draw();
+                            draw.drawing(panel1);
                         }
                         else
                         {
@@ -122,14 +118,7 @@ namespace DoAn1
                 }
             }
         }
-
-        public void btn2_Click(object sender, EventArgs e)
-        {
-            draw draw = new draw();
-            draw.drawing(panel1);
-        }
-
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             int x = e.X;
             int y = e.Y;

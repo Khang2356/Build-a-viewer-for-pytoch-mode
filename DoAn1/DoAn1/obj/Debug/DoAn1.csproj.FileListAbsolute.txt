@@ -7,9 +7,6 @@ E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn
 E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.pdb
 E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.exe
 E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.pdb
-E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl1.resources
-E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl2.resources
-E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.UserControl3.resources
 E:\DO AN 1,2,3\DOAN1\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.exe.config
 C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\bin\Debug\DoAn1.exe
