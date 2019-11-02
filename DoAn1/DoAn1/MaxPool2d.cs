@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoAn1
 {
-    public class MaxpPool2d : Module
+    public class MaxPool2d : Module
     {
         private int kernel_size;
         private int stride;
@@ -22,7 +22,7 @@ namespace DoAn1
         public bool Return_indices { get => return_indices; set => return_indices = value; }
         public bool Ceil_mode { get => ceil_mode; set => ceil_mode = value; }
 
-        public MaxpPool2d(string name,List<Layer> inputs,List<Layer> outputs,int kernel_size,int stride,int padding,int dilation,bool return_indices,bool ceil_mode):base(name, inputs, outputs) {
+        public MaxPool2d(string name,List<Layer> inputs,List<Layer> outputs,int kernel_size,int stride,int padding,int dilation,bool return_indices,bool ceil_mode):base(name, inputs, outputs) {
             this.kernel_size = kernel_size;
             this.stride = stride;
             this.padding = padding;

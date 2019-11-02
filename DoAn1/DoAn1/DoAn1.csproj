@@ -58,7 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Linear.cs" />
-    <Compile Include="MaxpPool2d.cs" />
+    <Compile Include="MaxPool2d.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
