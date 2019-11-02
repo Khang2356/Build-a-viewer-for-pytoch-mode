@@ -23,12 +23,12 @@ namespace DoAn1
         public float Momentum { get => momentum; set => momentum = value; }
         public bool Affine { get => affine; set => affine = value; }
         public bool Track_running_stats { get => track_running_stats; set => track_running_stats = value; }
-<<<<<<< HEAD
+
         public int X { get => x; set => x = value; }
         public int Y { get => y; set => y = value; }
         public int Dai { get => dai; set => dai = value; }
         public int Rong { get => rong; set => rong = value; }
-=======
+
 
         public BatchNorm2d(string name,List<Layer> inputs,List<Layer> outputs,int num_features,string eps,float momentum,bool affine,bool track_running_stats):base(name,inputs,outputs){
             this.num_features = num_features;
@@ -37,6 +37,5 @@ namespace DoAn1
             this.affine = affine;
             this.track_running_stats = track_running_stats;
         }
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
     }
 }

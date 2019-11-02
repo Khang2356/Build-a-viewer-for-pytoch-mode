@@ -21,6 +21,8 @@ namespace DoAn1
         private List<Layer> inputs;
         private List<Layer> outputs;
 
+        public Module()
+        { }
         public Module(string name, List<Layer> inputs, List<Layer> outputs)
         {
             this.name = name;

@@ -31,11 +31,8 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btn2 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-=======
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
             this.SuspendLayout();
             // 
             // btn1
@@ -68,7 +65,6 @@
             this.btn2.Text = "Draw";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
-<<<<<<< HEAD
             // 
             // panel1
             // 
@@ -77,7 +73,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 552);
             this.panel1.TabIndex = 7;
-            this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // label1
@@ -87,20 +84,14 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 8;
-=======
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1563, 692);
+            this.ClientSize = new System.Drawing.Size(1042, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-=======
-            this.ClientSize = new System.Drawing.Size(1042, 450);
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btn1);
@@ -116,12 +107,10 @@
         #endregion
         public System.Windows.Forms.Button btn1;
         public System.Windows.Forms.Button btn2;
-<<<<<<< HEAD
+
         public System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Label label1;
-=======
->>>>>>> 8ddd08aa6a63729b60c54d2afbeae076d07606bf
     }
 }
 

@@ -19,4 +19,3 @@ C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoA
 C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csproj.GenerateResource.cache
 C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.exe
 C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.pdb
-C:\Users\ASUS\Desktop\Build-a-viewer-for-pytorch-model\DoAn1\DoAn1\obj\Debug\DoAn1.csprojAssemblyReference.cache
