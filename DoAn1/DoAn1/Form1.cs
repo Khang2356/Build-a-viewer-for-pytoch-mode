@@ -16,18 +16,14 @@ namespace DoAn1
     {
         Graphics grs;
         public object panel;
-        private object uc_Module1;
         public Form1()
         {
             InitializeComponent();
             grs = panel1.CreateGraphics();
+  
+
         }
        
-        public void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private async void btn1_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text File|*.txt", Multiselect = false })
@@ -52,23 +48,8 @@ namespace DoAn1
            
         }
 
-        private void userControl11_Load_2(object sender, EventArgs e)
+        public void btn2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void userControl21_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userControl31_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {   //Search character in txt file
             using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text File|*.txt", Multiselect = false })
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -113,16 +94,42 @@ namespace DoAn1
                         {
                             MessageBox.Show(error);
                         }
-
                     }
                 }
             }
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //int x = e.X;
+            //int y = e.Y;
+            //if (x <= 130 & x >= 60 )
+            //{
+            //    if (y >= 40 & y <= 70)
+            //    {
+            //        label1.Text = "Conv2d(3, 64, kernel_size=11, stride=4, padding=2)";
+            //    }
+            //    if (y >= 100 & y <= 130)
+            //    {
+            //        label1.Text = "Dropout(3, 64, p=abc, inplace=false)";
+            //    }
+            //    if (y >= 160 & y <= 190)
+            //    {
+            //        label1.Text = "Linear(5, 77, input_features=2, output_features=4, bias=true)";
+            //    }
+            //}
+            //else
+            //    label1.Text = "";
+        }
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+            label1.Text = "";
         }
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             int x = e.X;
             int y = e.Y;
-            if (x <= 130 & x >= 60 )
+            if (x <= 130 & x >= 60)
             {
                 if (y >= 40 & y <= 70)
                 {
@@ -139,10 +146,6 @@ namespace DoAn1
             }
             else
                 label1.Text = "";
-        }
-        private void panel1_MouseLeave(object sender, EventArgs e)
-        {
-            label1.Text = "";
         }
     }
 }
