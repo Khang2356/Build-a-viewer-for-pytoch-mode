@@ -13,8 +13,10 @@ using System.Drawing.Drawing2D;
 
 namespace DoAn1
 {
+    //Class vẽ
     public class draw 
     {
+        //Khai báo các thư viện và biến tọa độ
         Graphics grs;
         int x = 90, y = 40;
         int d = 70, r = 30;
@@ -26,7 +28,7 @@ namespace DoAn1
         SolidBrush sbr2 = new SolidBrush(Color.DarkSlateBlue);
         SolidBrush sbr3 = new SolidBrush(Color.White);
 
-
+        //Hàm vẽ layer đầu tiên
         public void drawing(Control control)
 
         {   
@@ -36,7 +38,7 @@ namespace DoAn1
             string text = @"data";
             grs.DrawString(text, font, sbr3, x + 15, y + 7);
         }
-
+ //Các hàm vẽ layer tiếp theo 
         public void drawing1(Control control)
         {
             grs = control.CreateGraphics();

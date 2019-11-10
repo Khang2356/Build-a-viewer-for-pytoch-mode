@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoAn1
 {
-    //cau truc luu so do Laye
+    //Danh sách liên kết đơn lưu các layer 
     class SinglyLinkedList
     {
         public Node head, tail;
