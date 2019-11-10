@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace DoAn1
 {
@@ -26,77 +27,41 @@ namespace DoAn1
        
         private async void btn1_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text File|*.txt", Multiselect = false })
+            OpenFileDialog op = new OpenFileDialog();
+            if (op.ShowDialog() == DialogResult.OK)
             {
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    using (StreamReader rd = new StreamReader(ofd.FileName))
-                    {
-                        richTextBox1.Text = await rd.ReadToEndAsync();
-                    }
-                }
+                System.IO.StreamReader sr = new System.IO.StreamReader(op.FileName);
+                richTextBox1.Text = sr.ReadToEnd();
+                sr.Close();
+            }
+            System.IO.StreamReader sr1 = new System.IO.StreamReader(op.FileName);
+            string input = sr1.ReadToEnd();
+            string[] character = new string[] { "def forward", "Conv2d", "AvgPool2d", "BatchNorm2d", "Dropout", "Linear", "MaxPool2d", "Softmax" };
+            string pattern = @"^.*\b(" + string.Join("|", character) + @")\b.*$";
+
+            MatchCollection matches = Regex.Matches(input, pattern, RegexOptions.Multiline);
+            foreach (Match match in matches)
+            {
+                SinglyLinkedList sll = new SinglyLinkedList();
+                sll.AddFirst("def forward");
+                sll.addLast("Conv2d");
+                sll.addLast("AvgPool2d");
+                sll.addLast("BatchNorm2d");
+                sll.addLast("Dropout");
+                sll.addLast("Linear");
+                sll.addLast("Maxpool2d");
+                sll.addLast("Softmax");
+
+                draw dr = new draw();
+                dr.drawing(panel1);
+                dr.drawing1(panel1);
+                dr.drawing2(panel1);
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        public void btn2_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text File|*.txt", Multiselect = false })
-            {
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    using (StreamReader rd = new StreamReader(ofd.FileName))
-                    {
-                        string currentLine;
-                        string searchString = "def forward(self,data)";
-                        string searchString1 = "Conv2d";
-                        //string searchString2 = "AvgPool2d";
-                        //string searchString3 = "BatchNorm2d";
-                        //string searchString4 = "Dropout";
-                        //string searchString5 = "MaxPool2d";
-                        //string searchString6 = "Softmax";
-
-                        //string success = "Yes";
-                        string error = "Nope";
-                        bool foundText = false;
-
-                        do
-                        {
-                            currentLine = rd.ReadLine();
-                            if (currentLine != null)
-                            {
-                                foundText = currentLine.Contains(searchString);
-                                foundText = currentLine.Contains(searchString1);
-                                /*foundText = currentLine.Contains(searchString2);
-                                foundText = currentLine.Contains(searchString3);
-                                foundText = currentLine.Contains(searchString4);
-                                foundText = currentLine.Contains(searchString5);
-                                foundText = currentLine.Contains(searchString6);*/
-                            }
-                        }
-                        while (currentLine != null && !foundText);
-
-                        if (foundText)
-                        {
-                            draw draw = new draw();
-                            draw.drawing(panel1);
-                        }
-                        else
-                        {
-                            MessageBox.Show(error);
-                        }
-                    }
-                }
-            }
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
@@ -129,23 +94,29 @@ namespace DoAn1
         {
             int x = e.X;
             int y = e.Y;
-            if (x <= 130 & x >= 60)
+            if (x <= 160 & x >= 90)
             {
                 if (y >= 40 & y <= 70)
                 {
-                    label1.Text = "Conv2d(3, 64, kernel_size=11, stride=4, padding=2)";
+                    label1.Text = "";
                 }
                 if (y >= 100 & y <= 130)
                 {
-                    label1.Text = "Dropout(3, 64, p=abc, inplace=false)";
+                    label1.Text = "Conv2d(3, 64, kernel_size=11, stride=4, padding=2)";
+
                 }
                 if (y >= 160 & y <= 190)
                 {
-                    label1.Text = "Linear(5, 77, input_features=2, output_features=4, bias=true)";
+                    label1.Text = "AvgPool2d(3, 64, kernel_size=9, stride=3, padding=4, divisor_override=20)";
                 }
             }
             else
                 label1.Text = "";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
