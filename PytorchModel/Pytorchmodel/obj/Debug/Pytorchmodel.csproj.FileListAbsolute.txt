@@ -1,0 +1,32 @@
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\GraphicsObject\UserControl1.g.cs
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\App.g.cs
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel_MarkupCompile.cache
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel_MarkupCompile.lref
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.exe.config
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.exe
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.pdb
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\GraphicsObject\UserControl1.baml
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\MainWindow.baml
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.g.resources
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.Properties.Resources.resources
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.exe
+C:\Users\ASUS\Desktop\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.pdb
+E:\Project 1\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.exe.config
+E:\Project 1\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.exe
+E:\Project 1\PytorchModel\Pytorchmodel\bin\Debug\Pytorchmodel.pdb
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.csprojAssemblyReference.cache
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\GraphicsObject\UserControl1.g.cs
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\MainWindow.g.cs
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\App.g.cs
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel_MarkupCompile.cache
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel_MarkupCompile.lref
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\GraphicsObject\UserControl1.baml
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\MainWindow.baml
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.g.resources
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.Properties.Resources.resources
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.csproj.GenerateResource.cache
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.exe
+E:\Project 1\PytorchModel\Pytorchmodel\obj\Debug\Pytorchmodel.pdb

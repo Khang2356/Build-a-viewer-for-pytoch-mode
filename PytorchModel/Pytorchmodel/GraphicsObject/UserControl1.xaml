@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Pytorchmodel.GraphicsObject.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pytorchmodel.GraphicsObject"
+             mc:Ignorable="d" Height="54.667" Width="221">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="MarchingAnts">
+            <DoubleAnimation BeginTime="00:00:00"
+                                Storyboard.TargetProperty="StrokeThickness"
+                                To="2"
+                                Duration="0:0:.25" />
+            <DoubleAnimation BeginTime="00:00:00" RepeatBehavior="Forever" Storyboard.TargetName="AlertBox" Storyboard.TargetProperty="StrokeDashOffset" 
+                                Duration="0:3:0" From="1000" To="0"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid Name="MainGrid" MouseLeftButtonDown="MainGrid_MouseLeftButtonDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="TitleGrid" Grid.Row="0" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave">
+            <Border x:Name="TitleZone" CornerRadius="10, 10, 0, 0" BorderBrush="Black" BorderThickness="2,2,2,2" Background="#FF385073" Opacity=".9">
+                <TextBlock x:Name="txtblockTitle" TextWrapping="Wrap" Text="Conv2d" FontSize="20" Margin="8,-1.668,8,-0.332" TextAlignment="Center" LineStackingStrategy="BlockLineHeight" Foreground="White"/>
+            </Border>
+        </Grid>
+        <Grid Name="AttributeGrid" Grid.Row = "1">
+            <Border x:Name="AttributesZone" CornerRadius="0, 0, 10, 10" BorderBrush="Black" BorderThickness="2,0,2,2" Background="#FF2D2D2D" Grid.RowSpan="1" Opacity=".85">
+                <TextBlock x:Name="txtblockPropety" Margin="8,0" LineHeight="3" FontSize="18" Foreground="White"/>
+            </Border>
+        </Grid>
+
+        <Rectangle x:Name="AlertBox"
+                      Stroke="White" 
+                       StrokeDashOffset="10" StrokeDashArray="3" Grid.RowSpan="2"
+                       RadiusX="10"
+                       RadiusY="10"
+                   Visibility="Hidden"/>
+    </Grid>
+</UserControl>
