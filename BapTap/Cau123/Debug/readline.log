@@ -1,0 +1,8 @@
+﻿  readline.cpp
+C:\Users\ASUS\Desktop\readline\readline.cpp(10,6): warning C4101: 'numlines': unreferenced local variable
+C:\Users\ASUS\Desktop\readline\readline.cpp(11,7): warning C4101: 'c': unreferenced local variable
+C:\Users\ASUS\Desktop\readline\readline.cpp(56,17): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+C:\Users\ASUS\Desktop\readline\readline.cpp(56,17): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\ASUS\Desktop\readline\readline.cpp(56,17): message : the missing variadic argument 2 is required by format string '%c'
+C:\Users\ASUS\Desktop\readline\readline.cpp(56,17): message : this argument is used as a buffer size
+  readline.vcxproj -> C:\Users\ASUS\Desktop\readline\Debug\readline.exe
